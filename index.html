@@ -43,7 +43,19 @@
     /* 3D hero mockup */
     .mockup-wrap { perspective: 1300px; }
     .mockup { transition: transform .45s cubic-bezier(.22,1,.36,1); transform-style: preserve-3d; }
-  </style>
+      /* ---- mobile header fit (mobile optimization) ---- */
+    .btn-label-short { display: none; }
+    @media (max-width: 600px) {
+      .header-inner { gap: 12px; padding: 10px 14px 10px 18px; }
+      .logo-text span { display: none; }
+      .header .btn { padding: 10px 16px; font-size: 13px; }
+      .header .btn .btn-label { display: none; }
+      .header .btn .btn-label-short { display: inline; }
+    }
+    @media (max-width: 360px) {
+      .header-inner { gap: 8px; padding: 10px 12px; }
+    }
+</style>
 </head>
 <body>
   <header class="header" id="header">
@@ -64,7 +76,7 @@
         <a href="#beispiel">Beispiele</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <a href="#kontakt" class="btn"><span class="btn-label">Erstgespräch sichern</span>
+      <a href="#kontakt" class="btn"><span class="btn-label">Erstgespräch sichern</span><span class="btn-label-short">Anfragen</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
       </a>
     </div>
