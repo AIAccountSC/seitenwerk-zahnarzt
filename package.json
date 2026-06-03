@@ -1,0 +1,12 @@
+{
+  "name": "seitenwerk-zahnarzt",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Seitenwerk.de — Praxis-Websites für Zahnärzte",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "npx --yes serve .",
+    "dev": "npx --yes serve ."
+  },
+  "keywords": ["landing-page", "seitenwerk", "zahnarzt", "static-site"]
+}
