@@ -65,6 +65,9 @@
     .device-phone .screen { display:block; width:100%; height:auto; border-radius:22px; }
     .device-phone::before { content:""; position:absolute; z-index:4; top:6px; left:50%; transform:translateX(-50%); width:36%; height:9px; background:#0b1220; border-radius:0 0 9px 9px; }
     @media (max-width:560px){ .device-phone{ left:-4%; width:34%; } }
+    /* ---- founder portrait photo ---- */
+    .about-photo { display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; background:linear-gradient(160deg, var(--green-soft), #ffffff) !important; }
+    .about-photo-img { width:78%; max-width:300px; height:auto !important; aspect-ratio:1/1; object-fit:cover; border-radius:50%; box-shadow:0 26px 54px -22px rgba(2,6,23,.32); }
 </style>
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <script type="application/ld+json">
@@ -471,7 +474,8 @@
     <section class="section" id="about" data-screen-label="08 About">
       <div class="container">
         <div class="about-grid">
-          <div class="about-photo reveal" aria-hidden="true">
+          <div class="about-photo reveal">
+            <img class="about-photo-img" src="assets/founder.png" alt="Thomas Stübinger, Inhaber von Seitenwerk.de" width="1000" height="953" loading="lazy" decoding="async" />
             <div class="about-photo-label">
               <b>Thomas Stübinger</b>
               <span>Inhaber · Seitenwerk.de</span>
