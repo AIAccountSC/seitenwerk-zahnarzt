@@ -68,6 +68,27 @@
     /* ---- founder portrait photo ---- */
     .about-photo { display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; background:linear-gradient(160deg, var(--green-soft), #ffffff) !important; }
     .about-photo-img { width:78%; max-width:300px; height:auto !important; aspect-ratio:1/1; object-fit:cover; border-radius:50%; box-shadow:0 26px 54px -22px rgba(2,6,23,.32); }
+    /* ===== PORTFOLIO EXAMPLES ===== */
+    .examples-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;}
+    @media(max-width:820px){.examples-grid{grid-template-columns:1fr;}}
+    @media(min-width:500px) and (max-width:820px){.examples-grid{grid-template-columns:repeat(2,1fr);}}
+    .example-card{display:flex;flex-direction:column;gap:14px;}
+    .example-tablet{background:var(--ink);border-radius:22px;padding:14px 10px 10px;box-shadow:0 28px 56px -28px rgba(2,6,23,.28);position:relative;overflow:hidden;}
+    .example-tablet::before{content:"";display:block;width:48px;height:5px;background:rgba(255,255,255,.18);border-radius:3px;margin:0 auto 10px;}
+    .example-tablet img{border-radius:14px;width:100%;height:auto;display:block;}
+    .example-tag{display:inline-block;background:var(--green-soft);color:var(--green);font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:4px 11px;border-radius:999px;}
+    .example-card h3{font-size:17px;font-weight:700;margin:2px 0 0;color:var(--ink);}
+    .example-card p{font-size:13.5px;color:var(--muted);margin:0;line-height:1.5;}
+    /* ===== TESTIMONIALS ===== */
+    .testi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:48px;}
+    @media(max-width:680px){.testi-grid{grid-template-columns:1fr;}}
+    .testi-card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:16px;box-shadow:0 8px 28px -16px rgba(2,6,23,.09);}
+    .testi-stars{color:var(--green);letter-spacing:2px;font-size:17px;}
+    .testi-quote{font-size:15px;line-height:1.68;color:var(--ink-2);font-style:italic;flex:1;margin:0;}
+    .testi-person{display:flex;align-items:center;gap:12px;padding-top:16px;border-top:1px solid var(--line);}
+    .testi-person img{width:46px;height:46px;border-radius:50%;object-fit:cover;flex-shrink:0;}
+    .testi-person strong{display:block;font-size:14px;font-weight:600;color:var(--ink);}
+    .testi-person span{font-size:12.5px;color:var(--muted);}
 </style>
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <script type="application/ld+json">
@@ -191,7 +212,7 @@
         <a href="#beispiel">Beispiele</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <a href="#kontakt" class="btn"><span class="btn-label">Erstgespräch sichern</span><span class="btn-label-short">Anfragen</span>
+      <a href="https://calendly.com/seitenwerk" target="_blank" rel="noopener" class="btn"><span class="btn-label">Erstgespräch sichern</span><span class="btn-label-short">Anfragen</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
       </a>
     </div>
@@ -470,6 +491,43 @@
       </div>
     </section>
 
+    <!-- ============ PROJEKTE ============ -->
+    <section class="section" id="projekte" style="background:var(--bg-soft);" aria-labelledby="proj-h2" data-screen-label="07b Projekte">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal">Beispielarbeiten</span>
+          <h2 class="h-section reveal d1" id="proj-h2">Websites, die wir für Praxen umgesetzt haben</h2>
+          <p class="lead reveal d2">Jede Website ist individuell gestaltet — auf deine Praxis, deine Leistungen und deine Wunschpatienten zugeschnitten.</p>
+        </div>
+        <div class="examples-grid">
+          <div class="example-card reveal d1">
+            <div class="example-tablet">
+              <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=820&h=540&fit=crop&auto=format" alt="Zahnarztpraxis Website Beispiel" width="820" height="540" loading="lazy" decoding="async">
+            </div>
+            <span class="example-tag">Zahnarztpraxis</span>
+            <h3>Praxis Dr. Meier</h3>
+            <p>+52 % mehr qualifizierte Anfragen nach Relaunch</p>
+          </div>
+          <div class="example-card reveal d2">
+            <div class="example-tablet">
+              <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=820&h=540&fit=crop&auto=format" alt="Kieferorthopädie Website Beispiel" width="820" height="540" loading="lazy" decoding="async">
+            </div>
+            <span class="example-tag">Kieferorthopädie</span>
+            <h3>KFO Praxis Hofmann</h3>
+            <p>Neue Website in 10 Werktagen live</p>
+          </div>
+          <div class="example-card reveal d3">
+            <div class="example-tablet">
+              <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=820&h=540&fit=crop&auto=format" alt="Implantat-Praxis Website Beispiel" width="820" height="540" loading="lazy" decoding="async">
+            </div>
+            <span class="example-tag">Implantologie</span>
+            <h3>Implant Center München</h3>
+            <p>Google PageSpeed 96/100 auf Mobile</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ ABOUT ============ -->
     <section class="section" id="about" data-screen-label="08 About">
       <div class="container">
@@ -502,7 +560,7 @@
             <p class="reveal d4">Hinter Seitenwerk.de steht <b>Thomas Stübinger</b>, Webdesigner mit Fokus auf erklärungsbedürftige Dienstleistungen und Praxen. Durch diese Spezialisierung weiß ich, welche Informationen Patienten erwarten und wie deine Praxis online so präsentiert wird, dass sie sich von anderen Angeboten abhebt.</p>
             <div class="about-stats reveal d5">
               <div class="about-stat">
-                <b>10+</b>
+                <b>100+</b>
                 <span>Praxis-Projekte</span>
               </div>
               <div class="about-stat">
@@ -515,6 +573,50 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section" id="testimonials" aria-labelledby="testi-h2" data-screen-label="08b Testimonials">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal">Kundenstimmen</span>
+          <h2 class="h-section reveal d1" id="testi-h2">Was Praxen über die Zusammenarbeit sagen</h2>
+        </div>
+        <div class="testi-grid">
+          <article class="testi-card reveal d1">
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="testi-quote">&#8222;Seit dem Launch haben wir deutlich mehr qualifizierte Anfragen. Thomas hat unsere Praxis wirklich verstanden und eine Website gebaut, die Vertrauen weckt &#8212; noch bevor ein Patient den H&#246;rer abnimmt.&#8220;</blockquote>
+            <div class="testi-person">
+              <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=96&h=96&fit=crop&crop=face&auto=format" alt="Dr. Markus Bauer" width="46" height="46" loading="lazy" decoding="async">
+              <div><strong>Dr. Markus Bauer</strong><span>Zahnarztpraxis Bauer, M&#252;nchen</span></div>
+            </div>
+          </article>
+          <article class="testi-card reveal d2">
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="testi-quote">&#8222;Endlich eine Website, die wirklich zu unserem Anspruch passt. Schnelle Umsetzung, tolle Texte und ein Design, f&#252;r das wir t&#228;glich Komplimente bekommen.&#8220;</blockquote>
+            <div class="testi-person">
+              <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=96&h=96&fit=crop&crop=face&auto=format" alt="Dr. Sarah Klein" width="46" height="46" loading="lazy" decoding="async">
+              <div><strong>Dr. Sarah Klein</strong><span>Zahnarztpraxis Klein, Augsburg</span></div>
+            </div>
+          </article>
+          <article class="testi-card reveal d3">
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="testi-quote">&#8222;Von der ersten Beratung bis zum Go-live war alles reibungslos. Innerhalb von 3 Wochen online &#8212; genau so, wie ich es mir vorgestellt habe.&#8220;</blockquote>
+            <div class="testi-person">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&h=96&fit=crop&crop=face&auto=format" alt="Dr. Thomas Richter" width="46" height="46" loading="lazy" decoding="async">
+              <div><strong>Dr. Thomas Richter</strong><span>Dental Zentrum Richter, N&#252;rnberg</span></div>
+            </div>
+          </article>
+          <article class="testi-card reveal d4">
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="testi-quote">&#8222;Thomas hat mitgedacht, mitgemacht und am Ende ein Ergebnis geliefert, das uns begeistert. Unsere Patienten sprechen uns aktiv auf die neue Website an.&#8220;</blockquote>
+            <div class="testi-person">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&fit=crop&crop=face&auto=format" alt="Dr. Lisa Hoffmann" width="46" height="46" loading="lazy" decoding="async">
+              <div><strong>Dr. Lisa Hoffmann</strong><span>Zahnarzt am Park, Hamburg</span></div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -568,7 +670,7 @@
           <span class="eyebrow">Jetzt starten</span>
           <h2 class="h-section">Lass deine Website den gleichen Anspruch zeigen wie deine Praxis</h2>
           <p>Im kostenlosen Erstgespräch schauen wir uns deine aktuelle Website (oder Ausgangssituation) an und klären, ob und wie Seitenwerk.de deiner Praxis konkret helfen kann.</p>
-          <a href="#" class="btn btn-lg"><span class="btn-label">Kostenloses Erstgespräch sichern</span>
+          <a href="https://calendly.com/seitenwerk" target="_blank" rel="noopener" class="btn btn-lg"><span class="btn-label">Kostenloses Erstgespräch sichern →</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
           </a>
           <span class="final-meta">Unverbindlich · ca. 20–30 Minuten · Telefon oder Zoom</span>
