@@ -89,6 +89,14 @@
     .testi-person img{width:46px;height:46px;border-radius:50%;object-fit:cover;flex-shrink:0;}
     .testi-person strong{display:block;font-size:14px;font-weight:600;color:var(--ink);}
     .testi-person span{font-size:12.5px;color:var(--muted);}
+    .sw-team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:0;}
+    @media(max-width:640px){.sw-team-grid{grid-template-columns:1fr;}}
+    @media(min-width:400px) and (max-width:640px){.sw-team-grid{grid-template-columns:repeat(2,1fr);}}
+    .sw-team-card{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;padding:28px 20px;background:var(--card);border:1px solid var(--line);border-radius:20px;}
+    .sw-team-photo{width:96px;height:96px;border-radius:50%;object-fit:cover;box-shadow:0 10px 28px -12px rgba(2,6,23,.18);}
+    .sw-team-placeholder{background:var(--green-soft);display:block;}
+    .sw-team-card strong{font-size:15px;font-weight:700;color:var(--ink);display:block;}
+    .sw-team-card span{font-size:13px;color:var(--muted);}
 </style>
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <script type="application/ld+json">
@@ -502,27 +510,18 @@
         <div class="examples-grid">
           <div class="example-card reveal d1">
             <div class="example-tablet">
-              <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=820&h=540&fit=crop&auto=format" alt="Zahnarztpraxis Website Beispiel" width="820" height="540" loading="lazy" decoding="async">
+              <img src="assets/ipad-1.png" alt="Zahnarztpraxis Website Beispiel" loading="lazy" decoding="async">
             </div>
-            <span class="example-tag">Zahnarztpraxis</span>
-            <h3>Referenz-Praxis 1</h3>
-            <p>+52 % mehr qualifizierte Anfragen nach Relaunch</p>
           </div>
           <div class="example-card reveal d2">
             <div class="example-tablet">
-              <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=820&h=540&fit=crop&auto=format" alt="Kieferorthopädie Website Beispiel" width="820" height="540" loading="lazy" decoding="async">
+              <img src="assets/ipad-2.png" alt="Kieferorthopädie Website Beispiel" loading="lazy" decoding="async">
             </div>
-            <span class="example-tag">Kieferorthopädie</span>
-            <h3>Referenz-Praxis 2</h3>
-            <p>Neue Website in 10 Werktagen live</p>
           </div>
           <div class="example-card reveal d3">
             <div class="example-tablet">
-              <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=820&h=540&fit=crop&auto=format" alt="Implantat-Praxis Website Beispiel" width="820" height="540" loading="lazy" decoding="async">
+              <img src="assets/ipad-3.png" alt="Implantat-Praxis Website Beispiel" loading="lazy" decoding="async">
             </div>
-            <span class="example-tag">Implantologie</span>
-            <h3>Referenz-Praxis 3</h3>
-            <p>Google PageSpeed 96/100 auf Mobile</p>
           </div>
         </div>
       </div>
@@ -542,11 +541,12 @@
           <div class="about-body">
             <span class="eyebrow reveal">Über uns</span>
             <h2 class="h-section reveal d1" style="margin: 14px 0 24px;">Wer hinter Seitenwerk.de steht</h2>
-            <p class="reveal d2">Seitenwerk.de konzentriert sich auf Websites für Zahnarztpraxen und andere Gesundheitsdienstleister. Statt generische Agentur-Websites zu bauen, liegt der Fokus auf einem klaren Anspruch:</p>
+            <p class="reveal d2">Seitenwerk.de ist ein spezialisiertes Team für die Entwicklung professioneller Websites für Zahnarztpraxen, Ärzte, Therapeuten und andere Gesundheitsdienstleister in Deutschland.</p>
+            <p class="reveal d2" style="margin-top:10px;">Anders als klassische Webdesign-Agenturen konzentrieren wir uns nicht darauf, möglichst viele unterschiedliche Branchen zu bedienen. Unser Fokus liegt darauf, Praxen dabei zu unterstützen, ihre fachliche Qualität, ihre Spezialisierung und ihren professionellen Anspruch online sichtbar zu machen.</p>
             <ul class="about-bullets reveal d3">
               <li>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 7"></polyline></svg>
-                Deine Website soll deine fachliche Qualität widerspiegeln.
+                Deine Website soll die Qualität deiner Praxis widerspiegeln.
               </li>
               <li>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 7"></polyline></svg>
@@ -554,24 +554,47 @@
               </li>
               <li>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 7"></polyline></svg>
-                Deine Website soll dir helfen, die richtigen Patienten anzuziehen — nicht einfach nur mehr Anfragen.
+                Deine Website soll die richtigen Patienten ansprechen – nicht einfach nur mehr Anfragen generieren.
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 7"></polyline></svg>
+                Deine Website soll dein Team entlasten, indem wichtige Informationen klar und verständlich bereitgestellt werden.
               </li>
             </ul>
-            <p class="reveal d4">Hinter Seitenwerk.de steht <b>Thomas Stübinger</b>, Webdesigner mit Fokus auf erklärungsbedürftige Dienstleistungen und Praxen. Durch diese Spezialisierung weiß ich, welche Informationen Patienten erwarten und wie deine Praxis online so präsentiert wird, dass sie sich von anderen Angeboten abhebt.</p>
+            <p class="reveal d4">Hinter Seitenwerk.de steht ein Team aus Strategen, Designern, Entwicklern und Content-Spezialisten, das sich auf die digitale Präsentation von erklärungsbedürftigen Dienstleistungen spezialisiert hat. Durch unsere Erfahrung wissen wir, welche Informationen Patienten heute erwarten und wie eine moderne Praxis-Website aufgebaut sein muss, damit sie professionell wirkt und sich klar von anderen Anbietern in der Region abhebt.</p>
             <div class="about-stats reveal d5">
               <div class="about-stat">
                 <b>100+</b>
-                <span>Praxis-Projekte</span>
+                <span>Homepages erstellt</span>
               </div>
               <div class="about-stat">
-                <b>2 Jahre</b>
+                <b>5+ Jahre</b>
                 <span>Erfahrung</span>
               </div>
-              <div class="about-stat">
-                <b>DE</b>
-                <span>Made in Germany</span>
-              </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TEAM ============ -->
+    <section class="section" id="team" style="padding-top:0;padding-bottom:56px;" data-screen-label="08c Team">
+      <div class="container">
+        <div class="sw-team-grid">
+          <div class="sw-team-card">
+            <img src="assets/founder.png" alt="Thomas Stübinger" width="160" height="160" loading="lazy" decoding="async" class="sw-team-photo" />
+            <strong>Thomas Stübinger</strong>
+            <span>CEO &amp; Gründer</span>
+          </div>
+          <div class="sw-team-card">
+            <img src="https://cdn.prod.website-files.com/649413ec23c5269e2fb03294/658183b74d341b8e9974a1a5_Marco%20Niedermeier.png" alt="Marco Niedermeier" width="160" height="160" loading="lazy" decoding="async" class="sw-team-photo" />
+            <strong>Marco Niedermeier</strong>
+            <span>Account Manager</span>
+          </div>
+          <div class="sw-team-card">
+            <div class="sw-team-photo sw-team-placeholder"></div>
+            <strong>Hoa</strong>
+            <span>[Rolle]</span>
           </div>
         </div>
       </div>
@@ -590,7 +613,7 @@
             <blockquote class="testi-quote">&#8222;Seit dem Launch haben wir deutlich mehr qualifizierte Anfragen. Thomas hat unsere Praxis wirklich verstanden und eine Website gebaut, die Vertrauen weckt &#8212; noch bevor ein Patient den H&#246;rer abnimmt.&#8220;</blockquote>
                         <div class="testi-person">
               <div style="width:46px;height:46px;border-radius:50%;background:var(--line);flex-shrink:0;"></div>
-              <div><strong>[Kundenname]</strong><span>[Praxisname, Stadt]</span></div>
+              <div><strong>Zahnarzt</strong><span>München</span></div>
             </div>
           </article>
           <article class="testi-card reveal d2">
@@ -598,7 +621,7 @@
             <blockquote class="testi-quote">&#8222;Endlich eine Website, die wirklich zu unserem Anspruch passt. Schnelle Umsetzung, tolle Texte und ein Design, f&#252;r das wir t&#228;glich Komplimente bekommen.&#8220;</blockquote>
                         <div class="testi-person">
               <div style="width:46px;height:46px;border-radius:50%;background:var(--line);flex-shrink:0;"></div>
-              <div><strong>[Kundenname]</strong><span>[Praxisname, Stadt]</span></div>
+              <div><strong>Zahnspezialist</strong><span>Hamburg</span></div>
             </div>
           </article>
           <article class="testi-card reveal d3">
@@ -606,7 +629,7 @@
             <blockquote class="testi-quote">&#8222;Von der ersten Beratung bis zum Go-live war alles reibungslos. Innerhalb von 3 Wochen online &#8212; genau so, wie ich es mir vorgestellt habe.&#8220;</blockquote>
                         <div class="testi-person">
               <div style="width:46px;height:46px;border-radius:50%;background:var(--line);flex-shrink:0;"></div>
-              <div><strong>[Kundenname]</strong><span>[Praxisname, Stadt]</span></div>
+              <div><strong>Dental Zentrum</strong><span>Nürnberg</span></div>
             </div>
           </article>
           <article class="testi-card reveal d4">
@@ -614,7 +637,7 @@
             <blockquote class="testi-quote">&#8222;Thomas hat mitgedacht, mitgemacht und am Ende ein Ergebnis geliefert, das uns begeistert. Unsere Patienten sprechen uns aktiv auf die neue Website an.&#8220;</blockquote>
                         <div class="testi-person">
               <div style="width:46px;height:46px;border-radius:50%;background:var(--line);flex-shrink:0;"></div>
-              <div><strong>[Kundenname]</strong><span>[Praxisname, Stadt]</span></div>
+              <div><strong>Orthopäde</strong><span>Nienburg</span></div>
             </div>
           </article>
         </div>
