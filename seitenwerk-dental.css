@@ -122,7 +122,11 @@
     }
     .nav a:hover { color: var(--ink); background: rgba(255,255,255,0.5); }
     .nav a:hover::after { transform: translateX(-50%) scaleX(1); }
-    @media (max-width: 880px) { .nav { display: none; } }
+    @media (max-width: 880px) {
+      html, body { overflow-x: hidden; }
+      .nav { display: none; }
+      .header { left: 14px; right: 14px; transform: none; width: auto; max-width: none; }
+    }
 
     .btn {
       display: inline-flex; align-items: center; gap: 8px;
