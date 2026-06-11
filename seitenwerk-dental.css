@@ -294,6 +294,7 @@
       display: grid; grid-template-columns: repeat(3, 1fr);
       gap: 12px; margin-top: 36px; max-width: 500px;
     }
+    @media (max-width: 500px) { .feature-row { grid-template-columns: 1fr; } }
     .feature-pill {
       padding: 14px 16px;
       background: rgba(255, 255, 255, 0.55);
@@ -352,6 +353,7 @@
     .mockup-head-r::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--green); animation: pulseDot 1.8s ease-in-out infinite; }
 
     .mockup-body { padding: 18px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 14px; }
+    @media (max-width: 500px) { .mockup-body { grid-template-columns: 1fr; } }
     .mockup-feature {
       grid-row: span 2;
       background: linear-gradient(150deg, var(--green) 0%, var(--green-3) 100%);
@@ -422,6 +424,7 @@
       display: grid; grid-template-columns: repeat(3, 1fr);
       gap: 8px; padding: 0 18px 18px;
     }
+    @media (max-width: 500px) { .mockup-tabs { grid-template-columns: 1fr; } }
     .mockup-tab {
       background: rgba(255, 255, 255, 0.7);
       backdrop-filter: blur(8px);
@@ -654,6 +657,7 @@
       gap: 14px;
     }
     @media (max-width: 880px) { .audience-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 500px) { .audience-grid { grid-template-columns: 1fr; } }
     .audience-card {
       background: rgba(255, 255, 255, 0.6);
       backdrop-filter: blur(14px) saturate(150%);
