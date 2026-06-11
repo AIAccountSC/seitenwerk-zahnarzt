@@ -57,13 +57,12 @@
     }
     /* ---- hero device mockup (real screenshots in frames) ---- */
     .mockup { background: transparent !important; border: 0 !important; padding: 0 !important; box-shadow: none !important; overflow: visible !important; position: relative; }
-    .device-laptop { position: relative; border: 12px solid #111827; border-radius: 18px; background: #111827; box-shadow: 0 1px 0 rgba(255,255,255,.07) inset, 0 34px 70px -34px rgba(2,6,23,.55); }
+    .device-laptop { position: relative; border: 6px solid #111827; border-radius: 14px; background: #111827; box-shadow: 0 1px 0 rgba(255,255,255,.07) inset, 0 34px 70px -34px rgba(2,6,23,.55); }
     .device-laptop .screen { display:block; width:100%; height:auto; border-radius:7px; }
     .device-laptop::after { content:""; position:absolute; left:50%; transform:translateX(-50%); bottom:-15px; width:116%; height:15px; background:linear-gradient(#e7edf3,#9aa7b6); border-radius:0 0 14px 14px; box-shadow:0 22px 34px -18px rgba(2,6,23,.5); }
     .device-laptop::before { content:""; position:absolute; z-index:2; left:50%; transform:translateX(-50%); bottom:-15px; width:15%; height:7px; background:#cbd5e1; border-radius:0 0 7px 7px; }
-    .device-phone { position:absolute; left:-8%; bottom:-12%; width:31%; border:7px solid #0b1220; border-radius:30px; background:#0b1220; box-shadow:0 30px 54px -22px rgba(2,6,23,.55); z-index:3; }
-    .device-phone .screen { display:block; width:100%; height:auto; border-radius:22px; }
-    .device-phone::before { content:""; position:absolute; z-index:4; top:6px; left:50%; transform:translateX(-50%); width:36%; height:9px; background:#0b1220; border-radius:0 0 9px 9px; }
+    .device-phone { position:absolute; left:-8%; bottom:-12%; width:31%; border:4px solid #0b1220; border-radius:24px; background:#0b1220; box-shadow:0 30px 54px -22px rgba(2,6,23,.55); z-index:3; }
+    .device-phone .screen { display:block; width:100%; height:auto; border-radius:20px; }
     @media (max-width:560px){ .device-phone{ left:-4%; width:34%; } }
     /* ---- founder portrait photo ---- */
     .about-photo { display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; background:linear-gradient(160deg, var(--green-soft), #ffffff) !important; }
@@ -115,9 +114,9 @@
     .case-detail-icon svg{width:20px;height:20px;}
     .case-detail div b{display:block;font-size:14px;font-weight:700;color:var(--ink);margin-bottom:2px;}
     .case-detail div p{font-size:13.5px;line-height:1.6;color:var(--ink-2);margin:0;}
-    .case-dots{display:flex;justify-content:center;gap:10px;margin-top:32px;}
-    .case-dot{width:10px;height:10px;border-radius:50%;background:var(--line);border:none;cursor:pointer;transition:background .3s,transform .3s;padding:0;}
-    .case-dot.active{background:var(--green);transform:scale(1.25);}
+    .case-dots{display:flex;justify-content:center;gap:8px;margin-top:32px;}
+    .case-dot{width:8px;height:8px;border-radius:50%;background:var(--line);border:none;cursor:pointer;transition:all .3s;padding:0;opacity:.45;}
+    .case-dot.active{background:var(--green);opacity:1;width:24px;border-radius:4px;}
     .case-benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px;}
     @media(max-width:680px){.case-benefits{grid-template-columns:1fr;}}
     .case-benefit{display:flex;align-items:flex-start;gap:14px;padding:20px;background:var(--card);border:1px solid var(--line);border-radius:16px;}
