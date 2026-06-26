@@ -126,6 +126,7 @@
     .case-benefit div p{font-size:13px;color:var(--muted);margin:0;line-height:1.5;}
     .case-note{text-align:center;font-size:13px;color:var(--muted);margin-top:24px;font-style:italic;}
 </style>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://assets.calendly.com; style-src 'self' 'unsafe-inline' https://assets.calendly.com; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://calendly.com; frame-src https://calendly.com; base-uri 'self'; form-action 'self'" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <script type="application/ld+json">
 {
@@ -228,9 +229,9 @@
   ]
 }
   </script>
-  <link rel="preconnect" href="https://assets.calendly.com" />
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <link rel="preconnect" href="https://assets.calendly.com" crossorigin />
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" crossorigin="anonymous" />
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="header" id="header">
@@ -251,7 +252,7 @@
         <a href="#beispiel">Beispiele</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn"><span class="btn-label">Erstgespräch sichern</span><span class="btn-label-short">Anfragen</span>
+      <a href="https://calendly.com/anfrage-seitenwerk/30min" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn"><span class="btn-label">Erstgespräch sichern</span><span class="btn-label-short">Anfragen</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
       </a>
     </div>
@@ -271,7 +272,7 @@
             <h1 class="h-display reveal d1">Die Praxis-Website, die zu deiner Zahnarztpraxis passt — und die richtigen <em>Patienten</em> anzieht.</h1>
             <p class="hero-sub reveal d2">Seitenwerk.net erstellt spezialisierte Websites für Zahnarztpraxen, die ihren Qualitätsanspruch online sichtbar machen und gezielt passende Patienten anziehen wollen — statt einfach nur „mehr Anfragen".</p>
             <div class="hero-cta-row reveal d3">
-              <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn btn-lg"><span class="btn-label">Kostenloses Erstgespräch sichern</span>
+              <a href="https://calendly.com/anfrage-seitenwerk/30min" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn btn-lg"><span class="btn-label">Kostenloses Erstgespräch sichern</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
               </a>
               <span class="hero-meta">Unverbindlich · 20–30 Minuten · Telefon oder Zoom</span>
@@ -314,7 +315,7 @@
           </div>
           <div class="prob-cta-card reveal d2">
             <p>Wenn du dich wiedererkennst, ist deine Website eher ein Risiko für dein Praxis-Image — statt ein professioneller Auftritt.</p>
-            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn"><span class="btn-label">Kostenloses Erstgespräch sichern</span>
+            <a href="https://calendly.com/anfrage-seitenwerk/30min" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn"><span class="btn-label">Kostenloses Erstgespräch sichern</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
             </a>
           </div>
@@ -379,7 +380,7 @@
             <h2 class="h-section reveal d1">Wie Seitenwerk.net deine Zahnarztpraxis online richtig positioniert</h2>
             <p class="lead reveal d2">Damit deine Website nicht nur „schön" aussieht, sondern deine Praxis fachlich und menschlich stark präsentiert, arbeiten wir mit einem klaren, strukturierten Ablauf.</p>
             <div class="reveal d3">
-              <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn btn-light"><span class="btn-label">Erstgespräch sichern</span>
+              <a href="https://calendly.com/anfrage-seitenwerk/30min" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn btn-light"><span class="btn-label">Erstgespräch sichern</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
               </a>
             </div>
@@ -522,7 +523,7 @@
                   <div class="case-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
                   <div><b>Ergebnis:</b><p>Stärkerer professioneller Eindruck, bessere Kommunikation der Leistungen und weniger wiederkehrende Rückfragen.</p></div>
                 </div>
-                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn" style="align-self:flex-start;margin-top:8px;"><span class="btn-label">Erstgespräch sichern</span>
+                <a href="https://calendly.com/anfrage-seitenwerk/30min" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn" style="align-self:flex-start;margin-top:8px;"><span class="btn-label">Erstgespräch sichern</span>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
                 </a>
               </div>
@@ -551,7 +552,7 @@
                   <div class="case-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
                   <div><b>Ergebnis:</b><p>Mehr gezielte Anfragen für Prophylaxe-Termine, weniger Erklärungsbedarf am Telefon und bessere Auslastung.</p></div>
                 </div>
-                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn" style="align-self:flex-start;margin-top:8px;"><span class="btn-label">Erstgespräch sichern</span>
+                <a href="https://calendly.com/anfrage-seitenwerk/30min" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn" style="align-self:flex-start;margin-top:8px;"><span class="btn-label">Erstgespräch sichern</span>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
                 </a>
               </div>
@@ -580,7 +581,7 @@
                   <div class="case-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
                   <div><b>Ergebnis:</b><p>Deutlich höhere Wahrnehmung als Premium-Anbieter, mehr Anfragen für hochwertige ästhetische Behandlungen.</p></div>
                 </div>
-                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn" style="align-self:flex-start;margin-top:8px;"><span class="btn-label">Erstgespräch sichern</span>
+                <a href="https://calendly.com/anfrage-seitenwerk/30min" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn" style="align-self:flex-start;margin-top:8px;"><span class="btn-label">Erstgespräch sichern</span>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
                 </a>
               </div>
@@ -824,7 +825,7 @@
           <span class="eyebrow">Jetzt starten</span>
           <h2 class="h-section">Lass deine Website den gleichen Anspruch zeigen wie deine Praxis</h2>
           <p>Im kostenlosen Erstgespräch schauen wir uns deine aktuelle Website (oder Ausgangssituation) an und klären, ob und wie Seitenwerk.net deiner Praxis konkret helfen kann.</p>
-          <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn btn-lg"><span class="btn-label">Kostenloses Erstgespräch sichern →</span>
+          <a href="https://calendly.com/anfrage-seitenwerk/30min" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn btn-lg"><span class="btn-label">Kostenloses Erstgespräch sichern →</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
           </a>
           <span class="final-meta">Unverbindlich · ca. 20–30 Minuten · Telefon oder Zoom</span>
