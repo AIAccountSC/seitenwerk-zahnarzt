@@ -233,11 +233,24 @@
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 <body>
+  <!-- shared SVG icon sprite -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></symbol>
+    <symbol id="icon-check-bold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 7"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 7"/></symbol>
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></symbol>
+    <symbol id="icon-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L3 7l9 5 9-5-9-5z"/><path d="M3 17l9 5 9-5"/><path d="M3 12l9 5 9-5"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="icon-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="icon-layout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></symbol>
+    <symbol id="icon-result" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></symbol>
+  </svg>
+
   <header class="header" id="header">
     <div class="header-inner">
       <a href="#top" class="logo">
         <span class="logo-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L3 7l9 5 9-5-9-5z"></path><path d="M3 17l9 5 9-5"></path><path d="M3 12l9 5 9-5"></path></svg>
+          <svg><use href="#icon-logo"/></svg>
         </span>
         <span class="logo-text">
           <b>Seitenwerk.net</b>
@@ -251,8 +264,8 @@
         <a href="#beispiel">Beispiele</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn"><span class="btn-label">Erstgespräch sichern</span><span class="btn-label-short">Anfragen</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+      <a href="" data-calendly-url="https://calendly.com/anfrage-seitenwerk/30min" class="btn"><span class="btn-label">Erstgespräch sichern</span><span class="btn-label-short">Anfragen</span>
+        <svg><use href="#icon-arrow"/></svg>
       </a>
     </div>
   </header>
@@ -271,8 +284,8 @@
             <h1 class="h-display reveal d1">Die Praxis-Website, die zu deiner Zahnarztpraxis passt — und die richtigen <em>Patienten</em> anzieht.</h1>
             <p class="hero-sub reveal d2">Seitenwerk.net erstellt spezialisierte Websites für Zahnarztpraxen, die ihren Qualitätsanspruch online sichtbar machen und gezielt passende Patienten anziehen wollen — statt einfach nur „mehr Anfragen".</p>
             <div class="hero-cta-row reveal d3">
-              <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn btn-lg"><span class="btn-label">Kostenloses Erstgespräch sichern</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+              <a href="" data-calendly-url="https://calendly.com/anfrage-seitenwerk/30min" class="btn btn-lg"><span class="btn-label">Kostenloses Erstgespräch sichern</span>
+                <svg><use href="#icon-arrow"/></svg>
               </a>
               <span class="hero-meta">Unverbindlich · 20–30 Minuten · Telefon oder Zoom</span>
             </div>
@@ -314,8 +327,8 @@
           </div>
           <div class="prob-cta-card reveal d2">
             <p>Wenn du dich wiedererkennst, ist deine Website eher ein Risiko für dein Praxis-Image — statt ein professioneller Auftritt.</p>
-            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn"><span class="btn-label">Kostenloses Erstgespräch sichern</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+            <a href="" data-calendly-url="https://calendly.com/anfrage-seitenwerk/30min" class="btn"><span class="btn-label">Kostenloses Erstgespräch sichern</span>
+              <svg><use href="#icon-arrow"/></svg>
             </a>
           </div>
         </div>
@@ -379,8 +392,8 @@
             <h2 class="h-section reveal d1">Wie Seitenwerk.net deine Zahnarztpraxis online richtig positioniert</h2>
             <p class="lead reveal d2">Damit deine Website nicht nur „schön" aussieht, sondern deine Praxis fachlich und menschlich stark präsentiert, arbeiten wir mit einem klaren, strukturierten Ablauf.</p>
             <div class="reveal d3">
-              <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn btn-light"><span class="btn-label">Erstgespräch sichern</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+              <a href="" data-calendly-url="https://calendly.com/anfrage-seitenwerk/30min" class="btn btn-light"><span class="btn-label">Erstgespräch sichern</span>
+                <svg><use href="#icon-arrow"/></svg>
               </a>
             </div>
           </div>
@@ -427,27 +440,27 @@
         </div>
         <div class="vorteile-grid">
           <div class="vorteil reveal d1">
-            <span class="vorteil-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 7"></polyline></svg></span>
+            <span class="vorteil-check"><svg><use href="#icon-check-bold"/></svg></span>
             Eine Website, die den Qualitätsanspruch deiner Praxis widerspiegelt — statt ihn zu untergraben.
           </div>
           <div class="vorteil reveal d2">
-            <span class="vorteil-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 7"></polyline></svg></span>
+            <span class="vorteil-check"><svg><use href="#icon-check-bold"/></svg></span>
             Bessere Darstellung von Prophylaxe, Implantaten, Ästhetik oder Kinderzahnheilkunde.
           </div>
           <div class="vorteil reveal d3">
-            <span class="vorteil-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 7"></polyline></svg></span>
+            <span class="vorteil-check"><svg><use href="#icon-check-bold"/></svg></span>
             Texte, die Vertrauen aufbauen, typische Fragen beantworten und Unsicherheiten reduzieren.
           </div>
           <div class="vorteil reveal d4">
-            <span class="vorteil-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 7"></polyline></svg></span>
+            <span class="vorteil-check"><svg><use href="#icon-check-bold"/></svg></span>
             Strukturierte Infos zu Öffnungszeiten, Anfahrt, Abläufen und Besonderheiten — weniger Rückfragen.
           </div>
           <div class="vorteil reveal d5">
-            <span class="vorteil-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 7"></polyline></svg></span>
+            <span class="vorteil-check"><svg><use href="#icon-check-bold"/></svg></span>
             Technisch sauber: mobil optimiert, schnell und langfristig nutzbar.
           </div>
           <div class="vorteil reveal d6">
-            <span class="vorteil-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 7"></polyline></svg></span>
+            <span class="vorteil-check"><svg><use href="#icon-check-bold"/></svg></span>
             Solide Basis für weitere Unterseiten oder Kampagnen für bestimmte Leistungen.
           </div>
         </div>
@@ -507,23 +520,23 @@
               <div class="case-slide-body">
                 <h3>Schwerpunkt Implantologie</h3>
                 <div class="case-detail">
-                  <div class="case-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+                  <div class="case-detail-icon"><svg><use href="#icon-search"/></svg></div>
                   <div><b>Ausgangssituation:</b><p>Die bisherige Website wirkte veraltet, wichtige Leistungen wurden nicht klar dargestellt und häufige Rückfragen belasteten das Team.</p></div>
                 </div>
                 <div class="case-detail">
-                  <div class="case-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+                  <div class="case-detail-icon"><svg><use href="#icon-target"/></svg></div>
                   <div><b>Ziel:</b><p>Ein moderner Auftritt mit klarem Schwerpunkt, verständlicher Struktur und spürbarer Entlastung im Praxisalltag.</p></div>
                 </div>
                 <div class="case-detail">
-                  <div class="case-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+                  <div class="case-detail-icon"><svg><use href="#icon-layout"/></svg></div>
                   <div><b>Umsetzung:</b><p>Neue Startseite, übersichtliche Unterseiten für alle Leistungen, klare Patientenführung und leicht auffindbare Kontaktmöglichkeiten.</p></div>
                 </div>
                 <div class="case-detail">
-                  <div class="case-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                  <div class="case-detail-icon"><svg><use href="#icon-result"/></svg></div>
                   <div><b>Ergebnis:</b><p>Stärkerer professioneller Eindruck, bessere Kommunikation der Leistungen und weniger wiederkehrende Rückfragen.</p></div>
                 </div>
-                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn" style="align-self:flex-start;margin-top:8px;"><span class="btn-label">Erstgespräch sichern</span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+                <a href="" data-calendly-url="https://calendly.com/anfrage-seitenwerk/30min" class="btn" style="align-self:flex-start;margin-top:8px;"><span class="btn-label">Erstgespräch sichern</span>
+                  <svg><use href="#icon-arrow"/></svg>
                 </a>
               </div>
             </div>
@@ -536,23 +549,23 @@
               <div class="case-slide-body">
                 <h3>Schwerpunkt Prophylaxe</h3>
                 <div class="case-detail">
-                  <div class="case-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+                  <div class="case-detail-icon"><svg><use href="#icon-search"/></svg></div>
                   <div><b>Ausgangssituation:</b><p>Prophylaxe-Leistungen waren online kaum sichtbar — Patienten wussten nicht, welche Angebote die Praxis bereithält.</p></div>
                 </div>
                 <div class="case-detail">
-                  <div class="case-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+                  <div class="case-detail-icon"><svg><use href="#icon-target"/></svg></div>
                   <div><b>Ziel:</b><p>Prophylaxe als eigenständigen Schwerpunkt positionieren und gezielt Patienten ansprechen, die Wert auf Vorsorge legen.</p></div>
                 </div>
                 <div class="case-detail">
-                  <div class="case-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+                  <div class="case-detail-icon"><svg><use href="#icon-layout"/></svg></div>
                   <div><b>Umsetzung:</b><p>Eigene Unterseite für Prophylaxe, klare Patienteninformationen zu Ablauf und Kosten, Online-Terminbuchung für Vorsorge.</p></div>
                 </div>
                 <div class="case-detail">
-                  <div class="case-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                  <div class="case-detail-icon"><svg><use href="#icon-result"/></svg></div>
                   <div><b>Ergebnis:</b><p>Mehr gezielte Anfragen für Prophylaxe-Termine, weniger Erklärungsbedarf am Telefon und bessere Auslastung.</p></div>
                 </div>
-                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn" style="align-self:flex-start;margin-top:8px;"><span class="btn-label">Erstgespräch sichern</span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+                <a href="" data-calendly-url="https://calendly.com/anfrage-seitenwerk/30min" class="btn" style="align-self:flex-start;margin-top:8px;"><span class="btn-label">Erstgespräch sichern</span>
+                  <svg><use href="#icon-arrow"/></svg>
                 </a>
               </div>
             </div>
@@ -565,23 +578,23 @@
               <div class="case-slide-body">
                 <h3>Ästhetische Zahnmedizin</h3>
                 <div class="case-detail">
-                  <div class="case-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+                  <div class="case-detail-icon"><svg><use href="#icon-search"/></svg></div>
                   <div><b>Ausgangssituation:</b><p>Ästhetische Leistungen gingen im Gesamtangebot unter — die Praxis wurde nicht als Premium-Anbieter wahrgenommen.</p></div>
                 </div>
                 <div class="case-detail">
-                  <div class="case-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+                  <div class="case-detail-icon"><svg><use href="#icon-target"/></svg></div>
                   <div><b>Ziel:</b><p>Premium-Positionierung im Bereich ästhetische Zahnmedizin mit visuellem Anspruch und klarer Patientenansprache.</p></div>
                 </div>
                 <div class="case-detail">
-                  <div class="case-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+                  <div class="case-detail-icon"><svg><use href="#icon-layout"/></svg></div>
                   <div><b>Umsetzung:</b><p>Visuell hochwertiges Design, Vorher-Nachher-Bildsprache, eigene Seiten für Veneers, Bleaching und Smile-Design.</p></div>
                 </div>
                 <div class="case-detail">
-                  <div class="case-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                  <div class="case-detail-icon"><svg><use href="#icon-result"/></svg></div>
                   <div><b>Ergebnis:</b><p>Deutlich höhere Wahrnehmung als Premium-Anbieter, mehr Anfragen für hochwertige ästhetische Behandlungen.</p></div>
                 </div>
-                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn" style="align-self:flex-start;margin-top:8px;"><span class="btn-label">Erstgespräch sichern</span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+                <a href="" data-calendly-url="https://calendly.com/anfrage-seitenwerk/30min" class="btn" style="align-self:flex-start;margin-top:8px;"><span class="btn-label">Erstgespräch sichern</span>
+                  <svg><use href="#icon-arrow"/></svg>
                 </a>
               </div>
             </div>
@@ -596,7 +609,7 @@
 
         <div class="case-benefits reveal d3">
           <div class="case-benefit">
-            <div class="case-benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+            <div class="case-benefit-icon"><svg><use href="#icon-target"/></svg></div>
             <div><h4>Klarere Positionierung</h4><p>Ihr Leistungsspektrum und Spezialisierungen sind auf den ersten Blick verständlich.</p></div>
           </div>
           <div class="case-benefit">
@@ -604,7 +617,7 @@
             <div><h4>Weniger Standardfragen</h4><p>Patienten finden Antworten bereits online — das entlastet Ihr Team spürbar.</p></div>
           </div>
           <div class="case-benefit">
-            <div class="case-benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+            <div class="case-benefit-icon"><svg><use href="#icon-result"/></svg></div>
             <div><h4>Professioneller Außenauftritt</h4><p>Ein moderner Webauftritt stärkt Vertrauen und Ihre Praxis als Marke.</p></div>
           </div>
         </div>
@@ -658,19 +671,19 @@
             <p class="reveal d2" style="margin-top:10px;">Anders als klassische Webdesign-Agenturen konzentrieren wir uns nicht darauf, möglichst viele unterschiedliche Branchen zu bedienen. Unser Fokus liegt darauf, Praxen dabei zu unterstützen, ihre fachliche Qualität, ihre Spezialisierung und ihren professionellen Anspruch online sichtbar zu machen.</p>
             <ul class="about-bullets reveal d3">
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 7"></polyline></svg>
+                <svg><use href="#icon-check"/></svg>
                 Deine Website soll die Qualität deiner Praxis widerspiegeln.
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 7"></polyline></svg>
+                <svg><use href="#icon-check"/></svg>
                 Deine Website soll Patienten Orientierung geben und Vertrauen schaffen.
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 7"></polyline></svg>
+                <svg><use href="#icon-check"/></svg>
                 Deine Website soll die richtigen Patienten ansprechen – nicht einfach nur mehr Anfragen generieren.
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 7"></polyline></svg>
+                <svg><use href="#icon-check"/></svg>
                 Deine Website soll dein Team entlasten, indem wichtige Informationen klar und verständlich bereitgestellt werden.
               </li>
             </ul>
@@ -785,31 +798,31 @@
         <div class="faq-list">
           <details class="faq-item reveal d1" open>
             <summary class="faq-q">Wir haben bereits viele Patienten — lohnt sich eine neue Website überhaupt?
-              <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+              <span class="chev"><svg><use href="#icon-chevron-down"/></svg></span>
             </summary>
             <div class="faq-a">Ja, wenn du Wert auf einen professionellen Außenauftritt legst, bestimmte Leistungen stärker hervorheben willst oder dein Team entlasten möchtest. Eine gute Website ist heute ein wichtiger Teil deiner Praxis-Reputation — unabhängig davon, ob du bereits gut ausgelastet bist.</div>
           </details>
           <details class="faq-item reveal d2">
             <summary class="faq-q">Können wir unsere bestehenden Inhalte weiterverwenden?
-              <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+              <span class="chev"><svg><use href="#icon-chevron-down"/></svg></span>
             </summary>
             <div class="faq-a">In vielen Fällen ja. Wir prüfen gemeinsam, welche Inhalte sinnvoll sind, überarbeiten sie bei Bedarf und ergänzen sie um patientenorientierte Texte.</div>
           </details>
           <details class="faq-item reveal d3">
             <summary class="faq-q">Wie lange dauert die Umsetzung?
-              <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+              <span class="chev"><svg><use href="#icon-chevron-down"/></svg></span>
             </summary>
             <div class="faq-a">Je nach Umfang in der Regel zwischen 3 und 6 Wochen ab Freigabe des Konzepts. Im kostenlosen Erstgespräch bekommst du eine realistische Einschätzung.</div>
           </details>
           <details class="faq-item reveal d4">
             <summary class="faq-q">Müssen wir uns um Technik und Updates kümmern?
-              <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+              <span class="chev"><svg><use href="#icon-chevron-down"/></svg></span>
             </summary>
             <div class="faq-a">Seitenwerk.net übernimmt die technische Umsetzung. Wie die laufende Betreuung aussieht, besprechen wir individuell — je nachdem, was deine Praxis braucht.</div>
           </details>
           <details class="faq-item reveal d5">
             <summary class="faq-q">Was kostet eine Website von Seitenwerk.net?
-              <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+              <span class="chev"><svg><use href="#icon-chevron-down"/></svg></span>
             </summary>
             <div class="faq-a">Die Investition hängt vom Umfang ab — Anzahl der Unterseiten, Funktionen und gewünschter Betreuung. Im kostenlosen Erstgespräch klären wir deine Anforderungen und du erhältst ein transparentes Angebot.</div>
           </details>
@@ -824,8 +837,8 @@
           <span class="eyebrow">Jetzt starten</span>
           <h2 class="h-section">Lass deine Website den gleichen Anspruch zeigen wie deine Praxis</h2>
           <p>Im kostenlosen Erstgespräch schauen wir uns deine aktuelle Website (oder Ausgangssituation) an und klären, ob und wie Seitenwerk.net deiner Praxis konkret helfen kann.</p>
-          <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anfrage-seitenwerk/30min'});return false;" class="btn btn-lg"><span class="btn-label">Kostenloses Erstgespräch sichern →</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+          <a href="" data-calendly-url="https://calendly.com/anfrage-seitenwerk/30min" class="btn btn-lg"><span class="btn-label">Kostenloses Erstgespräch sichern →</span>
+            <svg><use href="#icon-arrow"/></svg>
           </a>
           <span class="final-meta">Unverbindlich · ca. 20–30 Minuten · Telefon oder Zoom</span>
         </div>
@@ -839,7 +852,7 @@
         <div class="foot-col">
           <a href="#top" class="logo" style="margin-bottom: 16px;">
             <span class="logo-mark" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L3 7l9 5 9-5-9-5z"></path><path d="M3 17l9 5 9-5"></path><path d="M3 12l9 5 9-5"></path></svg>
+              <svg><use href="#icon-logo"/></svg>
             </span>
             <span class="logo-text">
               <b>Seitenwerk.net</b>
@@ -944,5 +957,6 @@
       });
     }
   </script>
+  <script src="assets/shared.js"></script>
 </body>
 </html>
